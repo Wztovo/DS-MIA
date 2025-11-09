@@ -1,7 +1,7 @@
-# Dual-Source Metric-Based Multi-Client Membership Inference Attack (DSM-MIA)
+# Dual-Source Metric-Based Cross-Client Membership Inference Attack in Federated Learning
 
 Official implementation of the paper:  
-**"Dual-Source Metric-Based Multi-Client Membership Inference Attack in Federated Learning"**
+**"Dual-Source Metric-Based Cross-Client Membership Inference Attack in Federated Learning"**
 
 [[Paper]](https://arxiv.org/abs/xxxx.xxxxx) | [[Project Page]](https://github.com/yourname/DSM-MIA)
 
