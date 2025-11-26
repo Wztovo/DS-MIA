@@ -18,25 +18,10 @@ Unlike traditional MIAs that only determine whether a sample was used in trainin
 
 ---
 
-##  Key Features
--  Dual-source metric construction (global + local model metrics)  
--  Time-series modeling via RNN/Transformer with attention  
--  Multi-class attack (member + client attribution)  
--  Comprehensive evaluation across datasets and baselines  
-
----
-
 ##  Environment Setup
-
-```bash
-conda create -n dsm-mia python=3.9
-conda activate dsm-mia
-pip install -r requirements.txt
-```
-###  Main Dependencies
-- PyTorch >= 1.13  
-- NumPy, pandas, matplotlib, seaborn  
-- scikit-learn, tqdm
+`pytorch:2.0.1+cu118`
+`python:3.8.17`
+Before executing the project code, please prepare the Python environment according to the `requirements.txt` file. We set up the environment with python 3.8 and pytorch 2.0
 
 ##  Project Structure
 ```bash
