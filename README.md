@@ -22,10 +22,10 @@ Unlike traditional MIAs that only determine whether a sample was used in trainin
 Our code has been tested on Linux  with `Python 3.9.20`, `CUDA 12.1`, `PyTorch 2.0.1`.Before executing the project code, please prepare the Python environment according to the `requirements.txt` file. 
 
 ##  Project Structure
-```text
+```bash
 .
 ├── README.md
-├── workflow.pdf
+├── workflow.png
 └── DS-MIA
     ├── experiments
     ├── models
@@ -38,6 +38,7 @@ Our code has been tested on Linux  with `Python 3.9.20`, `CUDA 12.1`, `PyTorch 2
     ├── main.py
     ├── mia_attack.py
     └── requirements.txt
+```
 ##  Quick Start(CIFAR100-ResNet18 for example)
 
 ### 1.Train a target federated model
