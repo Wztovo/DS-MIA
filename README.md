@@ -2,10 +2,14 @@
 
 Official implementation of the paper:  
 **"Dual-Source Metric-Based Cross-Client Membership Inference Attack in Federated Learning"**
-
-[[Paper]](https://arxiv.org/abs/xxxx.xxxxx) | [[Project Page]](https://github.com/yourname/DSM-MIA)
-
 ---
+
+## Main Content
+
+- [Overview](#Overview)
+- [Environment Setup](#Environment Setup)
+- [Project Structure](#Project Structure)
+- [Quick Start](#Quick Start)
 
 ##  Overview
 
@@ -40,8 +44,9 @@ Our code has been tested on Linux  with `Python 3.9.20`, `CUDA 12.1`, `PyTorch 2
     └── requirements.txt
 ```
 ## DataSet
-### For CIFAR100 anf CIFAR10 ,the source code will automatically download the required datasets in the subsequent steps, so there is no need to download them separately. 
-### For Dernemt you can download from [here](https://www.kaggle.com/datasets/shubhamgoel27/dermnet)
+
+For CIFAR100 anf CIFAR10 ,the source code will automatically download the required datasets in the subsequent steps, so there is no need to download them separately. 
+For Dernemt you can download from [here](https://www.kaggle.com/datasets/shubhamgoel27/dermnet)
 
 ##  Quick Start(CIFAR100-ResNet18 for example)
 
@@ -49,11 +54,12 @@ Our code has been tested on Linux  with `Python 3.9.20`, `CUDA 12.1`, `PyTorch 2
 ```bash
 python main.py --trainTargetModel Ture --num_users 5  --local_ep 5  --epochs 25  --model_name ResNet18 --dataset cifar100 --num_classes 100
 ```
-### 1.Train the shadow federate learning model and save mode snapshot
+### 2.Train the shadow federate learning model and save mode snapshot
 ```bash
 python main.py --trainShadowModel Ture --num_users 5  --local_ep 5  --epochs 25  --model_name ResNet18 --dataset cifar100 --num_classes 100
 ```
 ### 3.Evaluate attacks
+
 Once you have trained the targed and shaodw models and save the mode snapshot, you can evaluate the DS-MIA effectiveness using the following commands:
 ```bash
 python mia_attack.py
