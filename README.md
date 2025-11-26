@@ -22,7 +22,7 @@ This repository provides the official implementation of **DS-MIA**, a novel memb
 ---
 
 ##  Environment Setup
-Our code has been tested on Linux  with `Python 3.9.20`, `CUDA 12.1`, `PyTorch 2.0.1`.Before executing the project code, please prepare the Python environment according to the `requirements.txt` file. 
+Our code has been tested on Linux  with `Python 3.9.20`, `CUDA 12.1`, `PyTorch 2.0.1`.Before executing the project code, please prepare the Python environment according to the `requirements.txt`. 
 
 ##  Project Structure
 ```bash
@@ -47,7 +47,7 @@ Our code has been tested on Linux  with `Python 3.9.20`, `CUDA 12.1`, `PyTorch 2
 For CIFAR100 anf CIFAR10 ,the source code will automatically download the required datasets in the subsequent steps, so there is no need to download them separately. 
 For Dernemt you can download from [here](https://www.kaggle.com/datasets/shubhamgoel27/dermnet)
 
-##  Quick Start(CIFAR100-ResNet18 for example)
+##  Quick Start(Taking CIFAR100-ResNet18 as an example)
 
 ### 1.Train the target federate learning model and save mode snapshot
 ```bash
