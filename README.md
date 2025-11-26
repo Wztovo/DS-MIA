@@ -1,5 +1,6 @@
 # Dual-Source Metric-Based Cross-Client Membership Inference Attack in Federated Learning
 
+
 Official implementation of the paper:  
 **"Dual-Source Metric-Based Cross-Client Membership Inference Attack in Federated Learning"**
 ---
@@ -13,9 +14,7 @@ Official implementation of the paper:
 
 ##  Overview
 
-This repository provides the official implementation of **DSM-MIA**, a novel membership inference attack designed for **federated learning (FL)**.  
-Unlike traditional MIAs that only determine whether a sample was used in training, DSM-MIA **identifies which specific client** in FL owns the sample.
-
+This repository provides the official implementation of **DS-MIA**, a novel membership inference attack designed for **federated learning (FL)**. Unlike traditional MIAs that only determine whether a sample was used in training, DS-MIA **identifies which specific client** in FL owns the sample.
 <p align="center">
   <img src="workflow.png" alt="Workflow of DS-MIA" width="600">
 </p>
