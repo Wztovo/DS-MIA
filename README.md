@@ -39,45 +39,27 @@ Our code has been tested on Linux  with `Python 3.9.20`, `CUDA 12.1`, `PyTorch 2
     ├── mia_attack.py
     └── requirements.txt
 ```
+## DataSet
+### For CIFAR100 anf CIFAR10 ,the source code will automatically download the required datasets in the subsequent steps, so there is no need to download them separately. 
+### For Dernemt you can download from [here](https://www.kaggle.com/datasets/shubhamgoel27/dermnet)
+
 ##  Quick Start(CIFAR100-ResNet18 for example)
 
-### 1.Train a target federated model
+### 1.Train the target federate learning model and save mode snapshot
 ```bash
-python train_fed_model.py --dataset cifar10 --model resnet18 --n_clients 5
+python main.py --trainTargetModel Ture --num_users 5  --local_ep 5  --epochs 25  --model_name ResNet18 --dataset cifar100 --num_classes 100
 ```
-### 2.Extract dual-source metrics
+### 1.Train the shadow federate learning model and save mode snapshot
 ```bash
-python feature_extraction.py --dataset cifar10 --rounds 60
+python main.py --trainShadowModel Ture --num_users 5  --local_ep 5  --epochs 25  --model_name ResNet18 --dataset cifar100 --num_classes 100
 ```
-### 3.Train the attack model
+### 3.Evaluate attacks
+Once you have trained the targed and shaodw models and save the mode snapshot, you can evaluate the DS-MIA effectiveness using the following commands:
 ```bash
-python train_attack_model.py --model RNN_Attention --epochs 50
-```
-### 1.Evaluate attacks
-```bash
-python attack_comparison.py --metric AUC --save_fig True
-```
-##  Results
-| Dataset | Model | Attack |  **AUC** |  **TPR@FPR=0.001** |
-|-------------|-----------|-----------|-------------|----------------------|
-| CIFAR-10    | ResNet-18 | DSM-MIA   | **0.874**   | **0.523** |
-| CIFAR-100   | ResNet-18 | DSM-MIA   | **0.812**   | **0.465** |
-##  Citation
-
-If you find our work helpful, please cite:
-```bash
-@article{yourname2025dsmmia,
-  title={Dual-Source Metric-Based Multi-Client Membership Inference Attack in Federated Learning},
-  author={Your Name and ...},
-  journal={arXiv preprint arXiv:xxxx.xxxxx},
-  year={2025}
-}
+python mia_attack.py
 ```
 ##  Contact
 
 If you have questions or issues, please open an issue or contact:
 ## your.email@domain.com
 
-##  License
-
-This project is licensed under the MIT License.
