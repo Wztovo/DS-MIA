@@ -7,9 +7,9 @@ Official implementation of the paper:
 ## Main Content
 
 - [Overview](#Overview)
-- [Environment Setup](#Environment Setup)
-- [Project Structure](#Project Structure)
-- [Quick Start](#Quick Start)
+- [Environment Setup](#Environment-Setup)
+- [Project Structure](#Project-Structure)
+- [Quick Start](#Quick-Start)
 
 ##  Overview
 
