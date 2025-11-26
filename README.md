@@ -13,7 +13,7 @@ This repository provides the official implementation of **DSM-MIA**, a novel mem
 Unlike traditional MIAs that only determine whether a sample was used in training, DSM-MIA **identifies which specific client** in FL owns the sample.
 
 <p align="center">
-  <img src="workflow.pdf" width="700"/>
+  <img src="workflow.png" alt="Workflow of DS-MIA" width="600">
 </p>
 
 ---
@@ -22,21 +22,23 @@ Unlike traditional MIAs that only determine whether a sample was used in trainin
 Our code has been tested on Linux  with `Python 3.9.20`, `CUDA 12.1`, `PyTorch 2.0.1`.Before executing the project code, please prepare the Python environment according to the `requirements.txt` file. 
 
 ##  Project Structure
-```bash
-DS-MIA/
-│
-├── src/
-│   ├── train_attack_model.py      # RNN/Transformer-based attack model
-│   ├── feature_extraction.py      # Construct dual-source metric sequences
-│   ├── utils.py                   # Helper functions
-│
-├── draw_pict/                     # Visualization scripts
-├── saved_mia_models/              # Trained attack models
-├── evaluate/                      # Evaluation results
-├── requirements.txt
-└── README.md
-```
-##  Quick Start
+```text
+.
+├── README.md
+├── workflow.pdf
+└── DS-MIA
+    ├── experiments
+    ├── models
+    ├── utils
+    ├── MetricSequence.py
+    ├── Metrics.py
+    ├── Models.py
+    ├── attackMethodsFramework.py
+    ├── dataset.py
+    ├── main.py
+    ├── mia_attack.py
+    └── requirements.txt
+##  Quick Start(CIFAR100-ResNet18 for example)
 
 ### 1.Train a target federated model
 ```bash
