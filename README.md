@@ -13,7 +13,7 @@ This repository provides the official implementation of **DSM-MIA**, a novel mem
 Unlike traditional MIAs that only determine whether a sample was used in training, DSM-MIA **identifies which specific client** in FL owns the sample.
 
 <p align="center">
-  <img src="assets/overview.odf" width="700"/>
+  <img src="overview.pdf" width="700"/>
 </p>
 
 ---
