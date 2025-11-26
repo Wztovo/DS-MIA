@@ -19,13 +19,11 @@ Unlike traditional MIAs that only determine whether a sample was used in trainin
 ---
 
 ##  Environment Setup
-`pytorch:2.0.1+cu118`
-`python:3.8.17`
-Before executing the project code, please prepare the Python environment according to the `requirements.txt` file. We set up the environment with python 3.8 and pytorch 2.0
+Our code has been tested on Linux  with `Python 3.9.20`, `CUDA 12.1`, `PyTorch 2.0.1`.Before executing the project code, please prepare the Python environment according to the `requirements.txt` file. 
 
 ##  Project Structure
 ```bash
-DSM-MIA/
+DS-MIA/
 │
 ├── src/
 │   ├── train_attack_model.py      # RNN/Transformer-based attack model
