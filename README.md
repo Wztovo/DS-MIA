@@ -45,7 +45,7 @@ Our code has been tested on Linux  with `Python 3.9.20`, `CUDA 12.1`, `PyTorch 2
 ## DataSet
 
 For CIFAR100 anf CIFAR10 ,the source code will automatically download the required datasets in the subsequent steps, so there is no need to download them separately. 
-For Dernemt you can download from [here](https://www.kaggle.com/datasets/shubhamgoel27/dermnet)
+For Dermnet you can download from [here](https://www.kaggle.com/datasets/shubhamgoel27/dermnet)
 
 ##  Quick Start(Taking CIFAR100-ResNet18 as an example)
 
