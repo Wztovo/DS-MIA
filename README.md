@@ -16,7 +16,7 @@ Official implementation of the paper:
 
 This repository provides the official implementation of **DS-MIA**, a novel membership inference attack designed for **federated learning (FL)**. Unlike traditional MIAs that only determine whether a sample was used in training, DS-MIA **identifies which specific client** in FL owns the sample.
 <p align="center">
-  <img src="pipline.png" alt="Workflow of DS-MIA" width="600">
+  <img src="pipline.png" alt="Workflow of DS-MIA" width="800">
 </p>
 
 ---
