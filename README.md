@@ -66,5 +66,5 @@ python mia_attack.py
 ##  Contact
 
 If you have questions or issues, please open an issue or contact:
-## your.email@domain.com
+## zetaowang@stumail.hbu.edu.cn
 
