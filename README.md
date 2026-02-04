@@ -14,7 +14,7 @@ Official implementation of the paper:
 
 ##  Overview
 
-This repository provides the official implementation of **DS-MIA**, a novel membership inference attack designed for **federated learning (FL)**. Unlike traditional MIAs that only determine whether a sample was used in training, DS-MIA **identifies which specific client** in FL owns the sample.
+This repository provides the official implementation of **DS-MIA**, a novel membership inference attack designed for **federated learning (FL)**. Unlike traditional MIAs in FL that only determine whether a sample was used for target client training, DS-MIA **identifies which specific client** in FL owns the sample.
 <p align="center">
   <img src="workflow.png" alt="Workflow of DS-MIA" width="800">
 </p>
@@ -44,7 +44,7 @@ Our code has been tested on Linux  with `Python 3.9.20`, `CUDA 12.1`, `PyTorch 2
 ```
 ## DataSet
 
-For CIFAR100 anf CIFAR10 ,the source code will automatically download the required datasets in the subsequent steps, so there is no need to download them separately. 
+For CIFAR100 and CIFAR10 ,the source code will automatically download the required datasets in the subsequent steps, so there is no need to download them separately. 
 For Dermnet you can download from [here](https://www.kaggle.com/datasets/shubhamgoel27/dermnet)
 
 ##  Quick Start(Taking CIFAR100-ResNet18 as an example)
